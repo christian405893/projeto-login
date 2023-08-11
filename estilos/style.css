@@ -55,3 +55,48 @@ section#login div#formulario {
     display: block;
     padding: 10px;
 }
+
+div#formulario > h1 { /*tanto faz botar o ">" ou n */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#formulario > p {
+    font-size: 0.8em;
+}
+
+/* Estilos para telas com largura menor que 767px */
+@media screen and (max-width: 767px) {
+  /* Estilos para a classe campo */
+  .campo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha os elementos à esquerda */
+    margin-bottom: 15px; /* Espaçamento entre os campos */
+  }
+
+  /* Estilos para o ícone */
+  .campo i {
+    margin-bottom: 5px;
+  }
+
+  /* Estilos para o input */
+  .campo input {
+    width: 100%;
+  }
+
+  /* Estilos para o label */
+  .campo label {
+    text-align: left; /* Alinha o label à esquerda */
+  }
+
+  /* Ajustes para o layout geral */
+  section#login div#formulario {
+    text-align: left; /* Alinha o texto à esquerda */
+    padding: 20px; /* Espaçamento interno */
+  }
+  
+  div#formulario h1 {
+    text-align: left; /* Alinha o título à esquerda */
+  }
+}
